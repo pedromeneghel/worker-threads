@@ -1,8 +1,14 @@
-# worker-threads
+# 🚀 Exemplo de uso do Worker Thread no Node.js
 
-Este projeto demonstra o uso de _worker threads_ no Node.js para calcular números de Fibonacci de forma eficiente, utilizando Fastify como servidor HTTP.
+Bem vindo(a)! 😄
 
-## Estrutura do Projeto
+Aqui você o código associado ao vídeo "Node.js MULTITHREADING? O segredo para backends de alto desempenho!" publicado no canal do YouTube [Codificando com Pedro](https://www.youtube.com/@CodificandoComPedro)!
+
+## Sobre o projeto
+
+Este projeto demonstra como o uso de _worker threads_ no Node.js evita bloqueio do Event Loop delegando o processamento pesado para um "trabalhador" e liberando a thread principal para os demais processamentos.
+
+## Estrutura
 
 - `src/server.ts`: Servidor Fastify que expõe endpoints HTTP.
 - `src/fibonacci-worker.ts`: Worker responsável pelo cálculo do Fibonacci.
@@ -22,7 +28,7 @@ Este projeto demonstra o uso de _worker threads_ no Node.js para calcular númer
    npm run dev
    ```
 
-3. Teste os endpoints usando o arquivo `client.http` ou ferramentas como curl/Postman.
+3. Teste os endpoints usando o arquivo `client.http` (necessário a instalação da extensão [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)!) ou ferramentas como curl/Postman.
 
 ## Endpoints
 
@@ -40,7 +46,3 @@ node autocannon/script.js
 
 - Node.js >= 20
 - npm
-
-## Licença
-
-ISC

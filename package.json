@@ -1,0 +1,20 @@
+{
+  "name": "worker-threads",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types --no-warnings --watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fastify": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "autocannon": "^8.0.0"
+  }
+}

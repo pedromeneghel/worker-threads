@@ -1,0 +1,13 @@
+# Variables
+@baseUrl = http://localhost:3333
+
+###
+
+# health check
+# @name health
+GET {{baseUrl}}/health
+
+### 
+
+# @name fibonacci
+GET {{baseUrl}}/fibonacci/40
